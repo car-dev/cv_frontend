@@ -8,6 +8,12 @@
 # dependencies
 /node_modules
 
+# specific personnal files
+install.txt
+
+# specific personnal folder
+/src/assets/img/*
+
 # IDEs and editors
 /.idea
 .project
