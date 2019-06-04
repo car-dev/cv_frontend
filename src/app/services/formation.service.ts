@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
-import { Formation } from 'src/models/Formation';
 import { HttpClient } from '@angular/common/http';
+
+import { Subject } from 'rxjs';
+
 import { AppSettings } from 'src/app/app.settings';
+import { Formation } from 'src/app/models/Formation';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +19,6 @@ export class FormationService {
   constructor(
     private httpClient: HttpClient
     ) { 
-      this.getFormations();
     }
 
   emitFormations() {
@@ -30,9 +31,10 @@ export class FormationService {
       (response) => {
         this.formations = response;
         this.emitFormations();
+        console.log('Liste des Formations chargée.')
       },
       (error) => {
-        console.log('Erreur de récupération des formations  : ' + error.toString());
+        console.log('Erreur de récupération de la liste des formations  : ' + JSON.stringify(error));
       }
     );
   }

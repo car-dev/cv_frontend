@@ -1,0 +1,5 @@
+<span *ngFor="let module of modules; let i = index">
+    <span>{{ module.name }}</span>
+    <span *ngIf="i < listlenght-1" >, </span>
+    <span *ngIf="i === listlenght-1" >.</span>
+</span>

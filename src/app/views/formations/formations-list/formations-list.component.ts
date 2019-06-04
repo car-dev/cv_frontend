@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Formation } from 'src/models/Formation';
+import { Formation } from 'src/app/models/Formation';
 
 @Component({
   selector: 'app-formations-list',

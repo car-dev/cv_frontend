@@ -4,11 +4,15 @@
   <div class="card-body">
 
     <!-- Title -->
-    <h4 class="card-title formation-item-component-title"><a>{{ formation.titre | uppercase }}</a></h4>
+    <h4 class="card-title">
+        <i class="fa fa-graduation-cap"></i>  
+        <span class="formation-item-component-title" >{{ formation.titre | uppercase }}  </span>
+    </h4>
     <!-- Title -->
     <h4 class="card-description formation-item-component-etablissement"><a class="formation-item-component-link" href="{{ formation.sitewebecole }}" target="_blank" >{{ formation.ecole }} à {{ formation.ville }}</a></h4>
     <!-- Text -->
-    <p class="card-text formation-item-component-niveau">Niveau {{ formation.niveau}} - Bac + {{ formation.bac }} <br /> Modules enseignés : .</p>
+    <p class="card-text formation-item-component-niveau">Niveau {{ formation.niveau}} - Bac + {{ formation.bac }} <br /></p>
+    <p class="formation-item-component-modules"> Modules enseignés : <app-modules-list [modules]="formation.modules"></app-modules-list></p>
     <!-- Button -->
     <span class="btn btn-primary" *ngIf="formation.result">Titre validé</span>
 

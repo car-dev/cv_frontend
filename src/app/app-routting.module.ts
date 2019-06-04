@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes }  from '@angular/router';
 import { CommonModule } from '@angular/common';
 
-import { HomeComponent } from './home/home.component'
-import { ExperiencesComponent } from './experiences/experiences.component'
-import { FormationsComponent } from './formations/formations.component'
+import { HomeComponent } from './views/home/home.component'
+import { ExperiencesComponent } from './views/experiences/experiences.component'
+import { FormationsComponent } from './views/formations/formations.component'
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormationService } from 'src/services/formation.service';
+import { FormationService } from 'src/app/services/formation.service';
 import { Subscription } from 'rxjs/Subscription';
 
 @Component({
@@ -18,10 +18,11 @@ export class FormationsComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.formationService.getFormations();
     this.formationSubscription = this.formationService.formationSubject.subscribe(
       (formations: any[]) => {
         this.formations = formations;
-        console.log("this.formations = " + JSON.stringify(this.formations));
+        // console.log("this.formations = " + JSON.stringify(this.formations));
       }
     );
   }
