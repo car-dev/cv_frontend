@@ -23,11 +23,10 @@
     </button>
 
     <div class="collapse navbar-collapse" id="menuNav">
-        <div class="navbar-nav mr-auto">
-            <a class="nav-item nav-link active" href="/home">ACCUEIL</a>
-            <a class="nav-item nav-link" href="/formation">FORMATION</a>
-            <a class="nav-item nav-link" href="/experience">EXPPERIENCE</a>
-            <a class="nav-item nav-link" href="#">TELECHARGEMENT</a>
+        <div class="navbar-nav mr-auto">    
+            <div *ngFor="let menu of menus">
+                    <a class="nav-item nav-link" [routerLink]="menu.path" routerLinkActive="active">{{ menu.name | uppercase }}</a>
+            </div>
         </div>
     </div>
 </nav> 

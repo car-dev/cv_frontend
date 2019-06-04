@@ -13,6 +13,7 @@ install.txt
 
 # specific personnal folder
 /src/assets/img/*
+/script_mysql
 
 # IDEs and editors
 /.idea

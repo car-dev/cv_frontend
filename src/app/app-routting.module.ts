@@ -3,13 +3,13 @@ import { RouterModule, Routes }  from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 import { HomeComponent } from './home/home.component'
-import { ExperienceComponent } from './experience/experience.component'
-import { FormationComponent } from './formation/formation.component'
+import { ExperiencesComponent } from './experiences/experiences.component'
+import { FormationsComponent } from './formations/formations.component'
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'formation', component: FormationComponent },
-  { path: 'experience', component: ExperienceComponent },
+  { path: 'formation', component: FormationsComponent },
+  { path: 'experience', component: ExperiencesComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: '**', redirectTo: '/home',  },
 ]
