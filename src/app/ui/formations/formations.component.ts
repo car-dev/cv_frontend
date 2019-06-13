@@ -5,7 +5,8 @@ import { Subscription } from 'rxjs/Subscription';
 @Component({
   selector: 'app-formations',
   templateUrl: './formations.component.html',
-  styleUrls: ['./formations.component.scss']
+  styleUrls: ['./formations.component.scss'],
+  providers: [FormationService],
 })
 export class FormationsComponent implements OnInit {
 

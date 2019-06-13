@@ -18,7 +18,7 @@ export class ModulesListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.listlenght = this.modules.length;
+    this.listlenght = this.modules.length ;
   }
 
   ngOnDestroy() {

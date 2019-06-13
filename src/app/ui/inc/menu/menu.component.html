@@ -9,10 +9,10 @@
     
     <div class="navbar-expand">
         <div class="navbar-nav menu-other-link">
-            <a class="nav-item nav-link" href="https://github.com/car-dev" target="_blank">
-                <i class="fa fa-github"></i>
+            <a style="cursor:pointer" class="nav-item nav-link" href="https://github.com/car-dev" target="_blank">
+                <i class="fa fa-github"></i> 
             </a>
-            <a class="nav-item nav-link" href="https://fr.linkedin.com/in/cgeindreau" target="_blank">
+            <a style="cursor:pointer" class="nav-item nav-link" href="https://fr.linkedin.com/in/cgeindreau" target="_blank">
                 <i class="fa fa-linkedin"></i>
             </a>
         </div>
@@ -25,7 +25,7 @@
     <div class="collapse navbar-collapse" id="menuNav">
         <div class="navbar-nav mr-auto">    
             <div *ngFor="let menu of menus">
-                    <a class="nav-item nav-link" [routerLink]="menu.path" routerLinkActive="active">{{ menu.name | uppercase }}</a>
+                    <a style="cursor:pointer" class="nav-item nav-link" [routerLink]="menu.path" routerLinkActive="active">{{ menu.name | uppercase }}</a>
             </div>
         </div>
     </div>
